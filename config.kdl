@@ -1,0 +1,10 @@
+# mkdir -p ~/.config/niri
+# vi ~/.config/niri/config.kdl
+
+binds {
+    Mod+Return { spawn "alacritty"; }
+    Mod+Shift+E { quit; }
+}
+
+spawn-at-startup "pipewire"
+spawn-at-startup "wireplumber"
