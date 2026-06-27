@@ -1,4 +1,5 @@
-# AlpineOS ~/
+export LD_LIBRARY_PATH=/usr/lib:/usr/local/lib:$LD_LIBRARY_PATH
+
 if [ -z "$XDG_RUNTIME_DIR" ]; then
     export XDG_RUNTIME_DIR=/tmp/run-user-$(id -u)
     if [ ! -d "$XDG_RUNTIME_DIR" ]; then
